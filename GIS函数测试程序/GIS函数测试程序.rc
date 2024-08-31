@@ -1,0 +1,391 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GIS.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GIS函数测试程序.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 51
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 GIS函数测试程序"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "GIS函数测试程序，智兔软件 1.0.0.1 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013 RabbitSoft Studio.All right reserved",IDC_STATIC,42,26,176,8
+END
+
+IDD_GIS_DIALOG DIALOGEX 0, 0, 635, 376
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "GIS函数测试程序"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "计算",IDOK,232,306,57,39
+    CTEXT           "程序内部参数说明：\n本程序使用 GE 的 WGS - 84椭球。\n长轴：6378137  短轴：6356911.94612\n扁率分母：298.257223563\ne^2：0.0066943799      UTM转换精度高\n距离计算使用地球平均半径：6371004.0",IDC_STATIC,17,7,289,53,WS_BORDER,WS_EX_TRANSPARENT
+    GROUPBOX        "起    始    点",IDC_STATIC,17,88,291,103,BS_LEFT
+    GROUPBOX        "终    止    点",IDC_STATIC,17,194,291,103,BS_LEFT
+    LTEXT           "距离：",IDC_STATIC,18,313,27,8
+    EDITTEXT        IDC_EDIT1,47,310,158,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "米",IDC_STATIC,209,313,8,8
+    LTEXT           "方位角：",IDC_STATIC,18,330,39,8
+    EDITTEXT        IDC_EDIT2,47,327,158,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "度",IDC_STATIC,209,330,8,8
+    LTEXT           "经度",IDC_STATIC,24,105,15,8
+    CONTROL         "度、分、秒",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,111,71,50,10
+    CONTROL         "度",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,254,71,23,10
+    LTEXT           "纬度",IDC_STATIC,24,124,15,8
+    LTEXT           "UTM N:",IDC_STATIC,24,144,24,8
+    LTEXT           "UTM E:",IDC_STATIC,24,158,24,8
+    COMBOBOX        IDC_COMBO1,48,103,23,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "UTM正算",IDC_BUTTON1,233,151,51,14
+    EDITTEXT        IDC_EDIT4,79,103,22,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT5,111,103,17,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT6,138,103,17,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT7,164,103,29,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "°",IDC_STATIC,103,103,8,8
+    LTEXT           "′",IDC_STATIC,130,103,8,8
+    LTEXT           ".",IDC_STATIC,157,109,8,8
+    LTEXT           "″",IDC_STATIC,197,103,8,8
+    CTEXT           "|\n|\n|\n|\n",IDC_STATIC,207,103,8,33
+    COMBOBOX        IDC_COMBO2,48,122,23,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT8,79,122,22,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT9,111,122,17,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT10,138,122,17,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT11,164,122,29,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "°",IDC_STATIC,103,122,8,8
+    LTEXT           "′",IDC_STATIC,130,122,8,8
+    LTEXT           ".",IDC_STATIC,157,128,8,8
+    LTEXT           "″",IDC_STATIC,197,122,8,8
+    EDITTEXT        IDC_EDIT12,222,103,71,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "°",IDC_STATIC,296,103,8,8
+    EDITTEXT        IDC_EDIT14,222,122,71,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "°",IDC_STATIC,296,122,8,8
+    EDITTEXT        IDC_EDIT3,55,141,172,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT16,55,158,172,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "经度",IDC_STATIC,24,211,15,8
+    LTEXT           "纬度",IDC_STATIC,24,230,15,8
+    LTEXT           "UTM N:",IDC_STATIC,24,250,24,8
+    LTEXT           "UTM E:",IDC_STATIC,24,264,24,8
+    COMBOBOX        IDC_COMBO3,48,209,23,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "UTM正算",IDC_BUTTON2,233,255,51,14
+    EDITTEXT        IDC_EDIT17,79,209,22,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT18,111,209,17,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT19,138,209,17,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT20,164,209,29,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "°",IDC_STATIC,103,209,8,8
+    LTEXT           "′",IDC_STATIC,130,209,8,8
+    LTEXT           ".",IDC_STATIC,157,215,8,8
+    LTEXT           "″",IDC_STATIC,197,209,8,8
+    CTEXT           "|\n|\n|\n|\n",IDC_STATIC,207,209,8,33
+    COMBOBOX        IDC_COMBO4,48,228,23,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT21,79,228,22,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT22,111,228,17,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT23,138,228,17,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT24,164,228,29,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "°",IDC_STATIC,103,228,8,8
+    LTEXT           "′",IDC_STATIC,130,228,8,8
+    LTEXT           ".",IDC_STATIC,157,234,8,8
+    LTEXT           "″",IDC_STATIC,197,228,8,8
+    EDITTEXT        IDC_EDIT25,222,209,71,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "°",IDC_STATIC,296,209,8,8
+    EDITTEXT        IDC_EDIT27,222,228,71,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "°",IDC_STATIC,296,228,8,8
+    EDITTEXT        IDC_EDIT29,55,247,172,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT30,55,264,172,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    ICON            IDR_MAINFRAME,IDC_STATIC,208,351,20,20
+    LTEXT           "Copyright (C) 2013 RabbitSoft Studio.All right reserved",IDC_STATIC,224,361,177,8
+    LTEXT           "智兔软件",IDC_STATIC,298,350,31,8
+    LTEXT           "中子午经度：",IDC_STATIC,24,177,42,8
+    LTEXT           "中子午经度：",IDC_STATIC,24,282,42,8
+    EDITTEXT        IDC_EDIT_zw1,72,174,155,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_zw2,72,280,155,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "知A点、距离、方位角   求B点 经纬度",IDC_STATIC,323,4,304,173
+    CTEXT           "|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n",IDC_STATIC,311,7,8,342
+    LTEXT           "经度",IDC_STATIC,335,33,15,8
+    LTEXT           "纬度",IDC_STATIC,335,52,15,8
+    COMBOBOX        IDC_COMBO5,359,31,23,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT28,390,31,22,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT31,422,31,17,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT32,449,31,17,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT33,475,31,29,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "°",IDC_STATIC,414,31,8,8
+    LTEXT           "′",IDC_STATIC,441,31,8,8
+    LTEXT           ".",IDC_STATIC,468,37,8,8
+    LTEXT           "″",IDC_STATIC,508,31,8,8
+    CTEXT           "|\n|\n|\n|\n",IDC_STATIC,518,31,8,33
+    COMBOBOX        IDC_COMBO6,359,50,23,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT34,390,50,22,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT35,422,50,17,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT36,449,50,17,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT37,475,50,29,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "°",IDC_STATIC,414,50,8,8
+    LTEXT           "′",IDC_STATIC,441,50,8,8
+    LTEXT           ".",IDC_STATIC,468,56,8,8
+    LTEXT           "″",IDC_STATIC,508,50,8,8
+    EDITTEXT        IDC_EDIT38,533,31,71,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "°",IDC_STATIC,607,31,8,8
+    EDITTEXT        IDC_EDIT39,533,50,71,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "°",IDC_STATIC,607,50,8,8
+    GROUPBOX        "选择输入格式：",IDC_STATIC,17,62,291,24
+    GROUPBOX        "已  知  参  数",IDC_STATIC,330,18,288,97,BS_LEFT
+    LTEXT           "距离：",IDC_STATIC,335,77,27,8
+    EDITTEXT        IDC_EDIT40,364,74,158,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "米",IDC_STATIC,526,77,8,8
+    LTEXT           "方位角：",IDC_STATIC,335,94,39,8
+    EDITTEXT        IDC_EDIT41,364,91,158,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "度",IDC_STATIC,526,94,8,8
+    GROUPBOX        "结  果",IDC_STATIC,330,119,288,52,BS_LEFT
+    EDITTEXT        IDC_EDIT42,364,131,117,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "°",IDC_STATIC,485,131,8,8
+    EDITTEXT        IDC_EDIT43,364,150,117,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "°",IDC_STATIC,485,150,8,8
+    LTEXT           "经度",IDC_STATIC,335,133,15,8
+    LTEXT           "纬度",IDC_STATIC,335,152,15,8
+    PUSHBUTTON      "求未知点",IDC_BUTTON3,528,128,80,34
+    GROUPBOX        "知四点经纬度，求其两弧交汇点经纬度",IDC_STATIC,322,188,305,163
+    EDITTEXT        IDC_EDIT44,408,216,71,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT45,514,216,71,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT46,408,235,71,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT47,514,235,71,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "°",IDC_STATIC,481,214,8,8
+    LTEXT           "°",IDC_STATIC,481,234,8,8
+    LTEXT           "°",IDC_STATIC,587,214,8,8
+    LTEXT           "°",IDC_STATIC,587,234,8,8
+    LTEXT           "弧线A1A2的已知点经纬度:",IDC_STATIC,438,201,82,8
+    LTEXT           "已知点A1   经度:",IDC_STATIC,351,219,53,8
+    LTEXT           "已知点A2   经度：",IDC_STATIC,351,237,58,8
+    LTEXT           "纬度:",IDC_STATIC,492,219,17,8
+    LTEXT           "纬度:",IDC_STATIC,492,237,17,8
+    EDITTEXT        IDC_EDIT48,408,269,71,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT49,514,269,71,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT50,408,288,71,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT51,514,288,71,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "°",IDC_STATIC,481,267,8,8
+    LTEXT           "°",IDC_STATIC,481,287,8,8
+    LTEXT           "°",IDC_STATIC,587,267,8,8
+    LTEXT           "°",IDC_STATIC,587,287,8,8
+    LTEXT           "弧线B1B2的已知点经纬度:",IDC_STATIC,438,254,81,8
+    LTEXT           "已知点B1   经度:",IDC_STATIC,351,272,52,8
+    LTEXT           "已知点B2   经度：",IDC_STATIC,351,290,57,8
+    LTEXT           "纬度:",IDC_STATIC,492,272,17,8
+    LTEXT           "纬度:",IDC_STATIC,492,290,17,8
+    EDITTEXT        IDC_EDIT52,384,322,71,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT53,490,322,71,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "°",IDC_STATIC,457,320,8,8
+    LTEXT           "°",IDC_STATIC,563,320,8,8
+    LTEXT           "交汇点    经度:",IDC_STATIC,327,325,47,8
+    LTEXT           "纬度:",IDC_STATIC,468,325,17,8
+    PUSHBUTTON      "计算交汇点",IDC_BUTTON4,577,312,43,31
+    LTEXT           "西经、南纬 请输入负号★",IDC_STATIC,330,201,94,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "GIS函数测试程序.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "GIS函数测试程序.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 44
+    END
+
+    IDD_GIS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 627
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 369
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_GIS_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 2, 0
+0x0045, 
+    IDC_COMBO1, 0x403, 2, 0
+0x0057, 
+    IDC_COMBO2, 0x403, 2, 0
+0x004e, 
+    IDC_COMBO2, 0x403, 2, 0
+0x0053, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0045, 
+    IDC_COMBO3, 0x403, 2, 0
+0x0057, 
+    IDC_COMBO4, 0x403, 2, 0
+0x004e, 
+    IDC_COMBO4, 0x403, 2, 0
+0x0053, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0045, 
+    IDC_COMBO5, 0x403, 2, 0
+0x0057, 
+    IDC_COMBO6, 0x403, 2, 0
+0x004e, 
+    IDC_COMBO6, 0x403, 2, 0
+0x0053, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 GIS函数测试程序(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GIS.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
